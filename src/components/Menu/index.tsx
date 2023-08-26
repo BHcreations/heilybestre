@@ -8,9 +8,9 @@ const Menu = () => {
 				<a>HEILY BESTRE</a>
 			</div>
 			<nav>
-				<Link to={`/${process.env.REACT_APP_APP_NAME}/`}>HOME</Link>
-				<Link to={`/${process.env.REACT_APP_APP_NAME}/about`}>ABOUT</Link>
-				<Link to={`/${process.env.REACT_APP_APP_NAME}/`}>RESUME</Link>
+				<Link to='/heilybestre/'>HOME</Link>
+				<Link to='/heilybestre/about'>ABOUT</Link>
+				<Link to='/heilybestre/'>RESUME</Link>
 			</nav>
 		</header>
 	);
