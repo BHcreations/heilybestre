@@ -1,9 +1,9 @@
 {
-	"name": "heilybestre.github.io",
+	"name": "heilybestre",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://bhcreations.github.io/heilybestre.github.io/",
+	"homepage": "https://bhcreations.github.io/heilybestre",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
