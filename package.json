@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://heilybestre.github.io",
+	"homepage": "https://bhcreations.github.io/heilybestre.github.io/",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
