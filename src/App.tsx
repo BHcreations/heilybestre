@@ -7,9 +7,9 @@ function App() {
 	return (
 		<>
 			<Routes>
-				<Route path='/heilybestre/' element={<Layout />}>
+				<Route path={`/${process.env.REACT_APP_APP_NAME}/`} element={<Layout />}>
 					<Route index element={<Home />} />
-					<Route path='/heilybestre/about' element={<About />} />
+					<Route path={`/${process.env.REACT_APP_APP_NAME}/about`} element={<About />} />
 					{/* <Route path="*" element={<NoMatch />} /> */}
 				</Route>
 			</Routes>
