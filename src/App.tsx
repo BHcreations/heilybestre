@@ -1,13 +1,10 @@
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
-import { useEffect } from 'react';
+import './App.css';
 
 function App() {
-	useEffect(() => {
-		console.log('app name', import.meta.env.VITE_APP_NAME);
-	});
 	return (
 		<>
 			<Routes>
@@ -17,7 +14,6 @@ function App() {
 					{/* <Route path="*" element={<NoMatch />} /> */}
 				</Route>
 			</Routes>
-			<Outlet />
 		</>
 	);
 }
