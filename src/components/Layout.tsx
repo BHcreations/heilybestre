@@ -6,7 +6,7 @@ const Layout = () => {
 	return (
 		<>
 			<Header />
-			<main className='grow'>
+			<main className='snap-y overflow-y-scroll'>
 				<Outlet />
 			</main>
 			<Footer />

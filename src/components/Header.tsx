@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 	return (
 		<header>
-			<nav className='bg-transparent px-4 lg:px-20 py-2.5 w-full'>
+			<nav className='bg-transparent px-40 w-full'>
 				<div className='relative flex flex-wrap justify-between items-center mx-auto max-w-screen-xl h-20 font-display'>
 					<div className='flex items-center gap-10'>
-						<a className='text-[#898EA2] text-xl font-black'>LOGO</a>
+						{/* <a className='text-[#898EA2] text-xl font-black'>LOGO</a> */}
 						<a className='text-[#898EA2] text-xl font-black'>HEILY BESTRE</a>
 					</div>
 					<div className='flex items-center gap-16'>
