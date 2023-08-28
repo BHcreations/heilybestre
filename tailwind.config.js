@@ -5,8 +5,8 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Roboto'],
-				serif: ['"Abhaya Libre ExtraBold"'],
-				display: ['Avenir'],
+				abhaya: ['"Abhaya Libre ExtraBold"'],
+				display: ['Sen'],
 			},
 		},
 	},
