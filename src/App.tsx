@@ -8,9 +8,9 @@ function App() {
 	return (
 		<>
 			<Routes>
-				<Route path={`/`} element={<Layout />}>
+				<Route path={`/${import.meta.env.VITE_APP_NAME}/`} element={<Layout />}>
 					<Route index element={<Home />} />
-					<Route path={`/about`} element={<About />} />
+					<Route path={`/${import.meta.env.VITE_APP_NAME}/about`} element={<About />} />
 					{/* <Route path="*" element={<NoMatch />} /> */}
 				</Route>
 			</Routes>
