@@ -2,8 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Abhaya Libre ExtraBold';
+	src: url('/fonts/AbhayaLibre-ExtraBold.ttf');
+}
+@font-face {
+	font-family: 'Sen';
+	src: url('/fonts/Sen-VariableFont_wght.ttf');
+}
+
+@layer components {
+	.home-introduction {
+		background-image: url('/images/designer-life.png'), url('/images/shape-1.png'), url('/images/browsers.png'),
+			url('/images/shape-2.png');
+		background-position: bottom -20px left 10px, bottom 170px left 10px, bottom -25px right 10px,
+			bottom 100px right 70px;
+		background-size: 547px, 481.53px, 603.35px, 514.88px;
+		background-attachment: fixed, fixed, fixed, fixed;
+		background-repeat: no-repeat;
+	}
+}
+
+@layer base {
+	button {
+		display: flex;
+		padding: 16px 32px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		border-radius: 12px;
+	}
+}
+
 :root {
-	font-family: Roboto, Avenir, Abhaya Libre ExtraBold;
+	font-family: Roboto, Sen, Abhaya Libre ExtraBold;
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -27,7 +59,7 @@ body {
 	/* height: 100vh; */
 }
 
-a {
+/* a {
 	font-weight: 500;
 	color: #646cff;
 	text-decoration: inherit;
@@ -71,4 +103,4 @@ button:focus-visible {
 	button {
 		background-color: #f9f9f9;
 	}
-}
+} */
