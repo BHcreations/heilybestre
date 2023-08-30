@@ -2,7 +2,7 @@ const Home = () => {
 	return (
 		<>
 			<section className='home-introduction min-h-screen h-[621px] snap-start relative'>
-				<div className='flex flex-col justify-start text-center pt-24 px-64 h-full z-50'>
+				<div className='flex flex-col justify-start text-center pt-24 lg:px-64 px-5 h-full z-50'>
 					<h1 className='text-[#262A4F] font-abhaya text-5xl font-extrabold mb-9'>
 						Hello! I am Heily, a <span className='text-[#C26B13]'>UI/UX Designer</span> and Former
 						<span className='text-[#A6A9B5]'>Web Developer</span> based in Manila, Philippines.
@@ -14,7 +14,7 @@ const Home = () => {
 			</section>
 			<section className='text-center bg-[#FFFAF6] h-[533px] min-h-screen snap-start'>
 				<h3 className='font-display text-2xl font-black py-20'>MY PROCESS</h3>
-				<ul className='font-sans flex flex-row justify-center items-center gap-6'>
+				<ul className='font-sans flex flex-wrap flex-row justify-center items-center gap-6'>
 					<li>
 						<div className='w-[272px] h-[203px] bg-[#D9D9D9] rounded-xl'></div>
 					</li>
@@ -29,7 +29,7 @@ const Home = () => {
 					</li>
 				</ul>
 			</section>
-			<section className='text-center snap-start min-h-screen'>
+			<section className='text-center snap-start min-h-screen mb-7'>
 				<h3 className='font-display text-2xl font-black py-24'>FEATURED WORK</h3>
 				<ul className='font-sans flex flex-col gap-40'>
 					<li className='flex flex-row justify-center items-center'>

@@ -13,13 +13,90 @@
 
 @layer components {
 	.home-introduction {
+		position: relative;
+		z-index: 0;
+	}
+	.home-introduction:after {
+		z-index: -1;
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		background-image: url('/images/designer-life.png'), url('/images/browsers.png');
+		background-position: bottom -20px left -70px, bottom 150px right -120px;
+		background-size: 50%, 50%;
+		background-attachment: fixed, fixed;
+		background-repeat: no-repeat;
+	}
+	.home-introduction:before {
+		z-index: -2;
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.3;
+		background-image: url('/images/shape-1.png'), url('/images/shape-2.png');
+		background-position: bottom 170px left -10px, bottom 100px right -120px;
+		background-size: 40%, 60%;
+		background-attachment: fixed, fixed;
+		background-repeat: no-repeat;
+	}
+	/* .home-introduction {
 		background-image: url('/images/designer-life.png'), url('/images/shape-1.png'), url('/images/browsers.png'),
 			url('/images/shape-2.png');
-		background-position: bottom -20px left 10px, bottom 170px left 10px, bottom -25px right 10px,
-			bottom 100px right 70px;
-		background-size: 547px, 481.53px, 603.35px, 514.88px;
+		background-position: bottom -20px left -70px, bottom 170px left -10px, bottom 150px right -120px,
+			bottom 100px right -120px;
+		background-size: 50%, 40%, 50%, 60%;
 		background-attachment: fixed, fixed, fixed, fixed;
 		background-repeat: no-repeat;
+	} */
+	@media (min-width: 1024px) {
+		/* .home-introduction {
+			background-image: url('/images/designer-life.png'), url('/images/shape-1.png'), url('/images/browsers.png'),
+				url('/images/shape-2.png');
+			background-position: bottom -20px left 10px, bottom 170px left 10px, bottom -25px right 10px,
+				bottom 100px right 70px;
+			background-size: 547px, 481.53px, 603.35px, 514.88px;
+			background-attachment: fixed, fixed, fixed, fixed;
+			background-repeat: no-repeat;
+		} */
+		.home-introduction:after {
+			z-index: -1;
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('/images/designer-life.png'), url('/images/browsers.png');
+			background-position: bottom -20px left 10px, bottom -25px right 10px;
+			background-size: 547px, 603.35px;
+			background-attachment: fixed, fixed;
+			background-repeat: no-repeat;
+		}
+		.home-introduction:before {
+			z-index: -2;
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('/images/shape-1.png'), url('/images/shape-2.png');
+			background-position: bottom 170px left 10px, bottom 100px right 70px;
+			background-size: 481.53px, 514.88px;
+			background-attachment: fixed, fixed;
+			background-repeat: no-repeat;
+		}
 	}
 }
 
@@ -41,7 +118,7 @@
 
 	color-scheme: light dark;
 	color: rgba(0, 0, 0, 0.87);
-	background-color: #ececec;
+	background-color: #fff;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;

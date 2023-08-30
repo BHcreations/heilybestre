@@ -13,20 +13,22 @@ footer,
 main {
 	display: block;
 	width: 100%;
+	position: relative;
 }
 
 main {
-	margin-top: 5rem;
-	margin-bottom: 6rem;
-	height: 100vh;
+	/* padding-top: 5rem;
+	padding-bottom: 6rem; */
+	/* height: 100vh; */
 }
 
 header {
-	position: absolute;
-	top: 0;
+	background: transparent;
+	/* position: absolute; */
+	/* top: 0; */
 }
 footer {
-	position: absolute;
+	/* position: absolute; */
 	background: #dde3e9;
 }
 
