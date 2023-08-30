@@ -1,22 +1,15 @@
+@import url('fonts.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: 'Abhaya Libre ExtraBold';
-	src: url('/fonts/AbhayaLibre-ExtraBold.ttf');
-}
-@font-face {
-	font-family: 'Sen';
-	src: url('/fonts/Sen-VariableFont_wght.ttf');
-}
-
 @layer components {
-	.home-introduction {
+	/* TODO: hero background */
+	.hero {
 		position: relative;
 		z-index: 0;
 	}
-	.home-introduction:after {
+	.hero:after {
 		z-index: -1;
 		content: ' ';
 		display: block;
@@ -32,7 +25,7 @@
 		background-attachment: fixed, fixed;
 		background-repeat: no-repeat;
 	}
-	.home-introduction:before {
+	.hero:before {
 		z-index: -2;
 		content: ' ';
 		display: block;
@@ -48,26 +41,8 @@
 		background-attachment: fixed, fixed;
 		background-repeat: no-repeat;
 	}
-	/* .home-introduction {
-		background-image: url('/images/designer-life.png'), url('/images/shape-1.png'), url('/images/browsers.png'),
-			url('/images/shape-2.png');
-		background-position: bottom -20px left -70px, bottom 170px left -10px, bottom 150px right -120px,
-			bottom 100px right -120px;
-		background-size: 50%, 40%, 50%, 60%;
-		background-attachment: fixed, fixed, fixed, fixed;
-		background-repeat: no-repeat;
-	} */
 	@media (min-width: 1024px) {
-		/* .home-introduction {
-			background-image: url('/images/designer-life.png'), url('/images/shape-1.png'), url('/images/browsers.png'),
-				url('/images/shape-2.png');
-			background-position: bottom -20px left 10px, bottom 170px left 10px, bottom -25px right 10px,
-				bottom 100px right 70px;
-			background-size: 547px, 481.53px, 603.35px, 514.88px;
-			background-attachment: fixed, fixed, fixed, fixed;
-			background-repeat: no-repeat;
-		} */
-		.home-introduction:after {
+		.hero:after {
 			z-index: -1;
 			content: ' ';
 			display: block;
@@ -82,7 +57,7 @@
 			background-attachment: fixed, fixed;
 			background-repeat: no-repeat;
 		}
-		.home-introduction:before {
+		.hero:before {
 			z-index: -2;
 			content: ' ';
 			display: block;
@@ -98,16 +73,51 @@
 			background-repeat: no-repeat;
 		}
 	}
+	.hero:before,
+	.hero:after {
+		display: none;
+	}
 }
 
 @layer base {
-	button {
-		display: flex;
-		padding: 16px 32px;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		border-radius: 12px;
+	button.btn {
+		@apply flex justify-center items-center gap-1 rounded-md;
+		padding: 14px 32px;
+		box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+	}
+	button.btn.secondary {
+		@apply border bg-neutral-200 border-neutral-400 text-neutral-600 font-poppins text-sm;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	h1.title {
+		@apply font-abhaya;
+	}
+
+	h1.title {
+		@apply text-[40px] leading-[40px];
+	}
+	h1 {
+		@apply text-5xl leading-[48px];
+	}
+	h2 {
+		@apply text-4xl leading-[36px];
+	}
+
+	p,
+	span {
+		@apply font-poppins;
+	}
+	p {
+		@apply text-base font-normal leading-6;
+	}
+
+	.center-all {
+		@apply flex justify-center items-center;
 	}
 }
 
@@ -135,49 +145,3 @@ body {
 	min-height: 100vh;
 	/* height: 100vh; */
 }
-
-/* a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
-}
-
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
-}
-
-button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
-} */
