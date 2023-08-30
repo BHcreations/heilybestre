@@ -1,5 +1,5 @@
 import { Menu, Transition } from '@headlessui/react';
-import { Bars2Icon } from '@heroicons/react/20/solid';
+import { Bars3Icon } from '@heroicons/react/20/solid';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { classNames } from '../helpers/styles';
@@ -7,21 +7,34 @@ import { classNames } from '../helpers/styles';
 const Header = () => {
 	return (
 		<header>
-			<nav className='bg-transparent lg:px-40 w-full px-6'>
+			<nav className='bg-transparent lg:px-52 w-full px-6'>
 				<div className='relative flex flex-wrap justify-between items-center mx-auto max-w-screen-xl h-20 font-display'>
 					<div className='flex items-center gap-10'>
 						{/* <a className='text-[#898EA2] text-xl font-black'>LOGO</a> */}
-						<a className='text-[#41434D] text-xl font-medium tracking-[0.8px]'>HEILY BESTRE</a>
+						{/* <a className='text-[#41434D] text-xl font-medium tracking-[0.8px]'>HEILY BESTRE</a> */}
+						<img src='/images/heilyb.svg' className='text-[#6D758F] w-full h-16' />
 					</div>
 					<div className='lg:flex items-center gap-16 hidden'>
-						<Link to='/heilybestre/' className='text-[#A6A9B5] text-xl font-medium tracking-[0.4px]'>
-							home
+						<Link
+							to='/heilybestre/'
+							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
+						>
+							HOME
 						</Link>
-						<Link to='/heilybestre/about' className='text-[#A6A9B5] text-xl font-medium tracking-[0.4px]'>
-							about
+						<Link
+							to='/heilybestre/about'
+							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
+						>
+							ABOUT
+						</Link>
+						<Link
+							to='/heilybestre/'
+							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
+						>
+							RESUME
 						</Link>
 						<Link to='/heilybestre/'>
-							<button className='bg-[#E38A88] text-[#fff] text-xl font-medium w-64 tracking-[0.8px]'>
+							<button className='btn bg-neutral-600 text-neutral-100 text-sm font-medium w-64 tracking-[0.8px]'>
 								WORK WITH ME
 							</button>
 						</Link>
@@ -29,7 +42,7 @@ const Header = () => {
 					<Menu as='div' className='lg:hidden relative inline-block text-left'>
 						<div>
 							<Menu.Button>
-								<Bars2Icon className='h-6 w-6 text-[#40434E]' />
+								<Bars3Icon className='h-6 w-6 text-[#40434E]' />
 							</Menu.Button>
 						</div>
 

@@ -1,68 +1,89 @@
 const Home = () => {
 	return (
 		<>
-			<section className='home-introduction min-h-screen h-[621px] snap-start relative'>
-				<div className='flex flex-col justify-start text-center pt-24 lg:px-64 px-5 h-full z-50'>
-					<h1 className='text-[#262A4F] font-abhaya text-5xl font-extrabold mb-9'>
-						Hello! I am Heily, a <span className='text-[#C26B13]'>UI/UX Designer</span> and Former
-						<span className='text-[#A6A9B5]'>Web Developer</span> based in Manila, Philippines.
+			<section className='hero min-h-screen h-[621px] snap-start relative'>
+				<div className='center-all flex-col text-center lg:pt-40 lg:px-52 pt-28  px-5 h-full z-50 gap-8'>
+					<h1 className='text-neutral-600 mb-9 lg:px-52 px-5'>
+						Hello! I am Heily, a UI/UX Designer and Former Web Developer based in Manila, Philippines.
 					</h1>
-					<span className='font-display text-[#898EA2] text-2xl font-semibold tracking-[1.2px]'>
+					<span className='font-display text-neutral-600 text-2xl font-semibold tracking-[1.2px]'>
 						Welcome to my portfolio.
 					</span>
+					<button className='btn text-neutral-100 bg-[#6D758F] lg:w-52 text-sm font-semibold '>
+						GET IN TOUCH
+					</button>
 				</div>
 			</section>
-			<section className='text-center bg-[#FFFAF6] h-[533px] min-h-screen snap-start'>
-				<h3 className='font-display text-2xl font-black py-20'>MY PROCESS</h3>
-				<ul className='font-sans flex flex-wrap flex-row justify-center items-center gap-6'>
-					<li>
-						<div className='w-[272px] h-[203px] bg-[#D9D9D9] rounded-xl'></div>
-					</li>
-					<li>
-						<div className='w-[272px] h-[203px] bg-[#D9D9D9] rounded-xl'></div>
-					</li>
-					<li>
-						<div className='w-[272px] h-[203px] bg-[#D9D9D9] rounded-xl'></div>
-					</li>
-					<li>
-						<div className='w-[272px] h-[203px] bg-[#D9D9D9] rounded-xl'></div>
-					</li>
-				</ul>
+			<section className='bg-[#F8F8F9] w-full min-h-screen snap-start center-all flex-col grow'>
+				<div className='center-all flex-wrap flex-col'>
+					<h1 className='title text-neutral-600 lg:mt-20 mt-12'>My Design Process</h1>
+					<span className='text-neutral-600 text-xs '>
+						What my design process looks like when you work with me.
+					</span>
+				</div>
+				<div className=' h-full w-full flex flex-col grow'>
+					<div className='center-all bg-neutral-300 grow lg:mx-52 lg:mb-20 lg:mt-8 my-12 mx-10'>
+						<img src='/images/icon-square-icon.svg' alt='image' className='text-neutral-600 h-16 w-16' />
+					</div>
+				</div>
 			</section>
 			<section className='text-center snap-start min-h-screen mb-7'>
-				<h3 className='font-display text-2xl font-black py-24'>FEATURED WORK</h3>
-				<ul className='font-sans flex flex-col gap-40'>
-					<li className='flex flex-row justify-center items-center'>
-						<div className='w-[570px] h-[432px] bg-[#C1C1C1] rounded-3xl'></div>
-						<div className='w-[570px] px-32'>
-							<h4 className='font-abhaya text-4xl font-extrabold pb-4'>PetSavvy</h4>
-							<p className='text-lg font-display'>
-								Lorem ipsum dolor sit amet consectetur. Adipiscing fringilla molestie leo nisl.
-								Ultricies hendrerit volutpat metus vitae iaculis.{' '}
-							</p>
-						</div>
-					</li>
-					<li className='flex flex-row justify-center items-center'>
-						<div className='w-[570px] px-32'>
-							<h4 className='font-abhaya text-4xl font-extrabold pb-4'>Title</h4>
-							<p className='text-lg font-display'>
-								Lorem ipsum dolor sit amet consectetur. Adipiscing fringilla molestie leo nisl.
-								Ultricies hendrerit volutpat metus vitae iaculis.{' '}
-							</p>
-						</div>
-						<div className='w-[570px] h-[432px] bg-[#C1C1C1] rounded-3xl'></div>
-					</li>
-					<li className='flex flex-row justify-center items-center'>
-						<div className='w-[570px] h-[432px] bg-[#C1C1C1] rounded-3xl'></div>
-						<div className='w-[570px] px-32'>
-							<h4 className='font-abhaya text-4xl font-extrabold pb-4'>Title</h4>
-							<p className='text-lg font-display'>
-								Lorem ipsum dolor sit amet consectetur. Adipiscing fringilla molestie leo nisl.
-								Ultricies hendrerit volutpat metus vitae iaculis.{' '}
-							</p>
-						</div>
-					</li>
-				</ul>
+				<div className='center-all flex-col lg:px-52'>
+					<h1 className='titletext-neutral-600 py-24'>Featured Work</h1>
+					<ul className='font-sans flex flex-col gap-40'>
+						<li className='center-all lg:flex-row flex-col gap-6'>
+							<div className='w-[542px] h-[452px] rounded-3xl center-all bg-neutral-300 grow'>
+								<img
+									src='/images/icon-square-icon.svg'
+									alt='image'
+									className='text-neutral-600 h-16 w-16'
+								/>
+							</div>
+							<div className='center-all flex-col w-[570px] px-32'>
+								<h2 className='pb-4'>PetSavvy</h2>
+								<p className='text-lg font-display'>
+									In a world where pets are cherished members of the family, the PetSavvy was created
+									to bridge the gap between pet owners and businesses in the pet care industry. This
+									case study explores how the app addresses pain points for both B2C users and B2B
+									service providers, creating a seamless and rewarding experience for all.
+								</p>
+								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
+							</div>
+						</li>
+						<li className='center-all lg:flex-row flex-col gap-6'>
+							<div className='center-all flex-col  w-[570px] px-32 order-2 lg:order-1'>
+								<h2 className='pb-4'>Title</h2>
+								<p className='text-lg font-display'>
+									An app that bridges gap between pet owners and businesses in the pet care industry.
+								</p>
+								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
+							</div>
+							<div className='w-[542px] h-[452px] rounded-3xl center-all bg-neutral-300 grow  order-1 lg:order-2'>
+								<img
+									src='/images/icon-square-icon.svg'
+									alt='image'
+									className='text-neutral-600 h-16 w-16'
+								/>
+							</div>
+						</li>
+						<li className='center-all lg:flex-row flex-col gap-6'>
+							<div className='w-[542px] h-[452px] rounded-3xl center-all bg-neutral-300 grow'>
+								<img
+									src='/images/icon-square-icon.svg'
+									alt='image'
+									className='text-neutral-600 h-16 w-16'
+								/>
+							</div>
+							<div className='center-all flex-col w-[570px] px-32'>
+								<h2 className='pb-4'>Title</h2>
+								<p className='text-lg font-display'>
+									An app that bridges gap between pet owners and businesses in the pet care industry.
+								</p>
+								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</>
 	);
