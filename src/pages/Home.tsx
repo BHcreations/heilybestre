@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => {
 	return (
 		<>
@@ -47,7 +49,11 @@ const Home = () => {
 									case study explores how the app addresses pain points for both B2C users and B2B
 									service providers, creating a seamless and rewarding experience for all.
 								</p>
-								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
+								<Link to={'/work/petsavvy'}>
+									<button className='btn secondary font-semibold mt-6 lg:mt-8'>
+										READ CASE STUDY
+									</button>
+								</Link>
 							</div>
 						</li>
 						<li className='center-all lg:flex-row flex-col gap-6'>
