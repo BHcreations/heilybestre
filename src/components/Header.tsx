@@ -12,28 +12,30 @@ const Header = () => {
 					<div className='flex items-center gap-10'>
 						{/* <a className='text-[#898EA2] text-xl font-black'>LOGO</a> */}
 						{/* <a className='text-[#41434D] text-xl font-medium tracking-[0.8px]'>HEILY BESTRE</a> */}
-						<img src='/images/heilyb.svg' className='text-[#6D758F] w-full h-16' />
+						<Link to='/'>
+							<img src='/images/heilyb.svg' className='text-[#6D758F] w-full h-16' />
+						</Link>
 					</div>
 					<div className='lg:flex items-center gap-16 hidden'>
 						<Link
-							to='/heilybestre/'
+							to='/'
 							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
 						>
 							HOME
 						</Link>
 						<Link
-							to='/heilybestre/about'
+							to='/about'
 							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
 						>
 							ABOUT
 						</Link>
 						<Link
-							to='/heilybestre/'
+							to='/'
 							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
 						>
 							RESUME
 						</Link>
-						<Link to='/heilybestre/'>
+						<Link to='/'>
 							<button className='btn bg-neutral-600 text-neutral-100 text-sm font-medium w-64 tracking-[0.8px]'>
 								WORK WITH ME
 							</button>
