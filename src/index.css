@@ -1,4 +1,5 @@
-@import url('fonts.css');
+@import url('./styles/fonts.css');
+@import url('./styles/components.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -80,13 +81,19 @@
 }
 
 @layer base {
-	button.btn {
-		@apply flex justify-center items-center gap-1 rounded-md;
-		padding: 14px 32px;
-		box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+	header,
+	main,
+	footer {
+		display: block;
+		width: 100%;
+		position: relative;
 	}
-	button.btn.secondary {
-		@apply border bg-neutral-200 border-neutral-400 text-neutral-600 font-poppins text-sm;
+	p,
+	span {
+		@apply font-avenir;
+	}
+	p {
+		@apply text-base font-normal leading-6;
 	}
 	h1,
 	h2,
@@ -94,30 +101,41 @@
 	h4,
 	h5,
 	h6,
-	h1.title {
+	.title,
+	h1 span {
 		@apply font-abhaya;
 	}
 
-	h1.title {
-		@apply text-[40px] leading-[40px];
+	.title {
+		@apply text-[40px] leading-[40px] sm:text-[32px] sm:leading-[32px];
 	}
-	h1 {
-		@apply text-5xl leading-[48px];
+	h1,
+	h1 span {
+		@apply lg:text-5xl text-4xl lg:leading-[48px] leading-[36px];
 	}
 	h2 {
 		@apply text-4xl leading-[36px];
 	}
 
-	p,
-	span {
-		@apply font-poppins text-neutral-600;
+	h3 {
+		@apply text-3xl;
 	}
-	p {
-		@apply text-base font-normal leading-6;
+
+	button.btn {
+		@apply flex justify-center items-center gap-1 rounded-md font-avenir text-sm;
+		padding: 14px 18px;
+		box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+	}
+	button.btn.secondary {
+		@apply font-avenir text-sm font-extrabold bg-none bg-transparent border-none shadow-none;
 	}
 
 	.center-all {
 		@apply flex justify-center items-center;
+	}
+
+	div.flex-container {
+		@apply flex justify-center items-center h-full m-auto;
 	}
 }
 
