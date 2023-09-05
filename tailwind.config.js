@@ -22,6 +22,9 @@ export default {
 			backgroundImage: {
 				'pet-savvy-cover': "url('/images/petsavvy-cover.png')",
 				'pet-savvy-cover2': "url('/images/petsavvy-cover2.png')",
+				'meal-plannr-cover1': "url('/images/mealplannr-cover-1.png')",
+				'meal-plannr-cover2': "url('/images/mealplannr-cover-2.png')",
+				'meal-plannr-lofi': "url('/images/mealplannr-lofi-wireframes.png')",
 			},
 		},
 	},

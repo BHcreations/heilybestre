@@ -135,7 +135,7 @@ const Home = () => {
 									shopping list and pantry inventory, ensuring you're always well-equipped to create
 									delicious dishes.
 								</p>
-								<Link to={'/work/petsavvy'}>
+								<Link to={'/work/mealplannr'}>
 									<button className='btn secondary font-semibold mt-6 lg:mt-8'>
 										READ CASE STUDY
 									</button>

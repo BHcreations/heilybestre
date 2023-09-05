@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import PetSavvy from './pages/PetSavvy';
+import MealPlannr from './pages/MealPlannr';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path={`/about`} element={<About />} />
 					<Route path={`/work/petsavvy`} element={<PetSavvy />} />
+					<Route path={`/work/mealplannr`} element={<MealPlannr />} />
 					{/* <Route path="*" element={<NoMatch />} /> */}
 				</Route>
 			</Routes>
