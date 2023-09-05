@@ -112,7 +112,7 @@ const PetSavvy = () => {
 				<div className='center-all flex-col mx-auto'>
 					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
 						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
-							<div className='box box-left-text lg:order-1 order-2'>
+							<div className='box box-left-text text-left lg:order-1 order-2'>
 								<h2 className='title pb-4 w-full'>Lo-fi wireframes</h2>
 								<p className='w-full mx-auto'>
 									Using the preliminary sketches and UI Requirements as a foundation, I began crafting
@@ -140,7 +140,7 @@ const PetSavvy = () => {
 									className='object-contain h-full w-full'
 								/>
 							</div>
-							<div className='box box-right-text lg:order-2 order-1'>
+							<div className='box box-right-text text-left lg:order-2 order-1'>
 								<h2 className='title pb-4 w-full'>Branding</h2>
 								<p className='w-full mx-auto mb-3'>
 									Before diving into logo and style design, I curated different mood board directions

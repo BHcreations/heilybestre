@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 	return (
 		<>
-			<section className='min-h-screen h-[621px] snap-start relative'>
+			<section className='h-[560px] snap-start relative'>
 				<div className='hero flex-container flex-col text-center z-50 m-auto lg:w-[728px] w-[390px]'>
 					<h1 className='mb-6 lg:text-5xl text-4xl'>
 						<span className='highlight bold lg:text-5xl text-4xl'>
@@ -11,14 +11,14 @@ const Home = () => {
 							in Manila, Philippines.
 						</span>
 					</h1>
-					<span className='text-base font-normal tracking-[0.48px] mb-9'>Welcome to my portfolio.</span>
-					<button className='btn lg:w-52 w-full'>GET IN TOUCH</button>
+					<span className='tracking-[0.48px] mb-9'>Welcome to my portfolio.</span>
+					<button className='btn'>GET IN TOUCH</button>
 				</div>
 			</section>
-			<section className='odd-section w-full min-h-screen snap-start center-all flex-col grow gap-12'>
+			<section className='odd-section w-full snap-start center-all flex-col grow gap-12'>
 				<div className='center-all flex-wrap flex-col w-[468px] text-center'>
-					<h1 className='title lg:mt-20 mt-12'>My Design Process</h1>
-					<span className='text-base '>
+					<h1 className='title lg:mt-20 mt-12 mb-6'>My Design Process</h1>
+					<span className='text-base'>
 						A glimpse into what you can expect from my design process when you choose to collaborate with
 						me.
 					</span>
@@ -91,7 +91,7 @@ const Home = () => {
 			</section>
 			<section className='w-full min-h-screen center-all flex-col grow text-center snap-start'>
 				<div className='center-all flex-col mx-auto'>
-					<h1 className='title pt-16'>Featured Work</h1>
+					<h1 className='title py-16'>Featured Work</h1>
 					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
 						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
 							<div className='pink-container box order-1 lg:order-2'>
@@ -101,13 +101,16 @@ const Home = () => {
 									className='text-neutral-600 h-16 w-16'
 								/>
 							</div>
-							<div className='box box-right-text lg:order-2 order-1'>
+							<div className='box box-right-text text-center lg:order-2 order-1'>
 								<h2 className='title pb-4 w-full'>PetSavvy</h2>
 								<p className='w-full mx-auto'>
-									In a world where pets are cherished members of the family, the PetSavvy was created
-									to bridge the gap between pet owners and businesses in the pet care industry. This
-									case study explores how the app addresses pain points for both B2C users and B2B
-									service providers, creating a seamless and rewarding experience for all.
+									In a world where pets are cherished members of the family, the{' '}
+									<span className='highlight bold'>
+										PetSavvy was created to bridge the gap between pet owners and businesses in the
+										pet care industry.
+									</span>{' '}
+									This case study explores how the app addresses pain points for both B2C users and
+									B2B service providers, creating a seamless and rewarding experience for all.
 								</p>
 								<Link to={'/work/petsavvy'}>
 									<button className='btn secondary font-semibold mt-6 lg:mt-8'>
@@ -120,10 +123,11 @@ const Home = () => {
 							<div className='box box-left-text order-2 lg:order-1'>
 								<h2 className='title pb-4 w-full'>MealPlannr</h2>
 								<p className='w-[461px] mx-auto'>
-									Introducing a comprehensive grocery list and pantry app that streamlines your
-									culinary journey. Seamlessly plan, track, and optimize your meals by effortlessly
-									managing your shopping list and pantry inventory, ensuring you're always
-									well-equipped to create delicious dishes.
+									Introducing a comprehensive 
+									<span className="highlight bold">grocery list and pantry app that streamlines your culinary journey.</span>{' '}
+									Seamlessly plan, track, and optimize your meals by effortlessly managing your
+									shopping list and pantry inventory, ensuring you're always well-equipped to create
+									delicious dishes.
 								</p>
 								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
 							</div>
