@@ -12,8 +12,8 @@ const PetSavvy = () => {
 					<h1 className='text-neutral-600 lg:text-5xl text-4xl'>Pet Savvy</h1>
 				</div>
 			</section>
-			<section className='odd-section w-full min-h-screen snap-start center-all grow'>
-				<div className='flex justify-center grow lg:flex-row flex-col text-center lg:text-left lg:gap-[22px] gap-12 lg:my-24 lg:mx-52 my-12 mx-10 h-full'>
+			<section className='odd-section w-full snap-start center-all grow'>
+				<div className='flex justify-center grow lg:flex-row flex-col text-center lg:text-left lg:gap-[22px] gap-12 xl:my-32 lg:my-24 lg:mx-52 my-12 mx-10 h-full'>
 					<div className='flex lg:justify-start justify-center flex-col gap-12 lg:w-[636px] w-full'>
 						<div>
 							<h1 className='title mb-6'>Background</h1>
@@ -72,7 +72,7 @@ const PetSavvy = () => {
 					</div>
 				</div>
 			</section>
-			<section className='w-full min-h-screen snap-start center-all flex-col grow text-center'>
+			<section className='w-full snap-start center-all flex-col grow text-center'>
 				<div className='center-all flex-wrap flex-col lg:mt-20 mt-12 lg:mb-12 mb-5 lg:w-[1106px] w-[320px] gap-7'>
 					<h1 className='lg:title text-[32px]'>Laying the groundwork</h1>
 					<p>
@@ -83,7 +83,7 @@ const PetSavvy = () => {
 					</p>
 				</div>
 				<div className=' flex flex-col grow mx-auto w-full'>
-					<div className='h-[689px] relative w-full bg-neutral-100'>
+					<div className='h-[1000px] relative w-full bg-neutral-100'>
 						<Carousel
 							name='groundwork'
 							items={[
@@ -100,7 +100,7 @@ const PetSavvy = () => {
 					<h1 className='g:title text-[32px]'>UI requirement document</h1>
 					<p>
 						After identifying the key screens and user flows, I created a{' '}
-						<span className='highlight odd'>
+						<span className='highlight odd bold'>
 							UI Requirements document to amplify the accumulated insights.
 						</span>{' '}
 						This document acts as a guide for the upcoming wireframing phase, especially useful if the
