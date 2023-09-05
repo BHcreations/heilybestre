@@ -53,7 +53,7 @@
 	}
 
 	.box {
-		@apply center-all flex-col grow lg:w-1/2 lg:h-[613px] w-[361px] h-[361px] m-auto;
+		@apply center-all flex-col grow lg:w-1/2 h-[550px] w-full m-auto aspect-auto;
 	}
 
 	.box.box-left-text {

@@ -28,7 +28,7 @@ const Home = () => {
 					</span>
 				</div>
 				<div className=' h-full lg:w-[1106px] w-[361px] mx-auto flex flex-col lg:flex-row lg:gap-16 lg:mb-16'>
-					<div className="mb-12 lg:mb-0">
+					<div className='mb-12 lg:mb-0'>
 						<img
 							src='/images/design-process-1.jpg'
 							alt='design process 1'
@@ -49,7 +49,7 @@ const Home = () => {
 							</ul>
 						</div>
 					</div>
-					<div className="mb-12 lg:mb-0">
+					<div className='mb-12 lg:mb-0'>
 						<img
 							src='/images/design-process-2.jpg'
 							alt='design process 2'
@@ -70,7 +70,7 @@ const Home = () => {
 							</ul>
 						</div>
 					</div>
-					<div className="mb-12 lg:mb-0">
+					<div className='mb-12 lg:mb-0'>
 						<img
 							src='/images/design-process-3.jpg'
 							alt='design process 3'
@@ -101,8 +101,8 @@ const Home = () => {
 							<div className='pink-container box in-progress order-1 lg:order-2 justify-start gap-10 pt-14 overflow-hidden'>
 								<h1 className='text-[#B1806E] text-[64px] leading-[80px] tracking-widest'>petsavvy</h1>
 								<div className='flex'>
-									<PetSavvyMobile1 />
-									<PetSavvyMobile2 />
+									<PetSavvyMobile1 className='lg:w-full w-10/12' />
+									<PetSavvyMobile2 className='lg:w-full w-10/12' />
 								</div>
 							</div>
 							<div className='box box-right-text lg:order-2 order-1'>
@@ -146,8 +146,8 @@ const Home = () => {
 									mealplannr
 								</h1>
 								<div className='flex'>
-									<MealPlannerMobile1 />
-									<MealPlannerMobile2 />
+									<MealPlannerMobile1 className='lg:w-full w-10/12' />
+									<MealPlannerMobile2 className='lg:w-full w-10/12' />
 								</div>
 							</div>
 						</li>
