@@ -64,6 +64,16 @@
 		@apply lg:pl-[111px] lg:pr-[calc(50%-111px-430px)] p-0;
 	}
 
+	.box.in-progress {
+		@apply relative;
+	}
+	.box.in-progress::before {
+		content: 'IN PROGRESS';
+		@apply font-avenir text-base leading-5 font-extrabold text-neutral-100 text-center center-all;
+		@apply rounded-3xl bg-[#DCB978] py-2 px-7;
+		@apply absolute top-6 right-6;
+	}
+
 	/* highlight */
 	section:has(.hero) h1 > span {
 		@apply text-[#575B63] px-5;

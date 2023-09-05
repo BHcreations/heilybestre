@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+import { ReactComponent as PetSavvyMobile1 } from '../../public/images/petsavvy-mobile-1.svg';
+import { ReactComponent as PetSavvyMobile2 } from '../../public/images/petsavvy-mobile-2.svg';
+import { ReactComponent as MealPlannerMobile1 } from '../../public/images/mealplannr-mobile-1.svg';
+import { ReactComponent as MealPlannerMobile2 } from '../../public/images/mealplannr-mobile-2.svg';
 
 const Home = () => {
 	return (
@@ -91,21 +95,21 @@ const Home = () => {
 			</section>
 			<section className='w-full min-h-screen center-all flex-col grow text-center snap-start'>
 				<div className='center-all flex-col mx-auto'>
-					<h1 className='title py-16'>Featured Work</h1>
+					<h1 className='title my-16'>Featured Work</h1>
 					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
 						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
-							<div className='pink-container box order-1 lg:order-2'>
-								<img
-									src='/images/icon-square-icon.svg'
-									alt='image'
-									className='text-neutral-600 h-16 w-16'
-								/>
+							<div className='pink-container box in-progress order-1 lg:order-2 justify-start gap-10 pt-14 overflow-hidden'>
+								<h1 className='text-[#B1806E] text-[64px] leading-[80px] tracking-widest'>petsavvy</h1>
+								<div className='flex'>
+									<PetSavvyMobile1 />
+									<PetSavvyMobile2 />
+								</div>
 							</div>
-							<div className='box box-right-text text-center lg:order-2 order-1'>
-								<h2 className='title pb-4 w-full'>PetSavvy</h2>
-								<p className='w-full mx-auto'>
+							<div className='box box-right-text lg:order-2 order-1'>
+								<h2 className='title pb-4 w-full text-center'>PetSavvy</h2>
+								<p className='w-full mx-auto text-center'>
 									In a world where pets are cherished members of the family, the{' '}
-									<span className='highlight bold'>
+									<span className='highlight'>
 										PetSavvy was created to bridge the gap between pet owners and businesses in the
 										pet care industry.
 									</span>{' '}
@@ -119,24 +123,32 @@ const Home = () => {
 								</Link>
 							</div>
 						</li>
-						<li className='center-all lg:flex-row flex-col gap-20 sm:gap-6'>
+						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
 							<div className='box box-left-text order-2 lg:order-1'>
-								<h2 className='title pb-4 w-full'>MealPlannr</h2>
-								<p className='w-[461px] mx-auto'>
-									Introducing a comprehensive 
-									<span className="highlight bold">grocery list and pantry app that streamlines your culinary journey.</span>{' '}
+								<h2 className='title pb-4 w-full text-center'>MealPlannr</h2>
+								<p className='w-[461px] mx-auto text-center'>
+									Introducing a comprehensive{' '}
+									<span className='highlight'>
+										grocery list and pantry app that streamlines your culinary journey.{' '}
+									</span>
 									Seamlessly plan, track, and optimize your meals by effortlessly managing your
 									shopping list and pantry inventory, ensuring you're always well-equipped to create
 									delicious dishes.
 								</p>
-								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
+								<Link to={'/work/petsavvy'}>
+									<button className='btn secondary font-semibold mt-6 lg:mt-8'>
+										READ CASE STUDY
+									</button>
+								</Link>
 							</div>
-							<div className='purple-container box order-1 lg:order-2'>
-								<img
-									src='/images/icon-square-icon.svg'
-									alt='image'
-									className='text-neutral-600 h-16 w-16'
-								/>
+							<div className='purple-container box in-progress order-1 lg:order-2 justify-start gap-10 pt-14 overflow-hidden'>
+								<h1 className='text-[##79719B] text-[64px] leading-[80px] tracking-widest'>
+									mealplannr
+								</h1>
+								<div className='flex'>
+									<MealPlannerMobile1 />
+									<MealPlannerMobile2 />
+								</div>
 							</div>
 						</li>
 					</ul>
