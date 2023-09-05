@@ -16,7 +16,7 @@ const Home = () => {
 						</span>
 					</h1>
 					<span className='tracking-[0.48px] mb-9'>Welcome to my portfolio.</span>
-					<button className='btn hidden'>GET IN TOUCH</button>
+					{/* <button className='btn'>GET IN TOUCH</button> */}
 				</div>
 			</section>
 			<section className='odd-section w-full snap-start center-all flex-col grow lg:gap-12 gap-8'>
@@ -96,13 +96,13 @@ const Home = () => {
 			<section className='w-full min-h-screen center-all flex-col grow text-center snap-start'>
 				<div className='center-all flex-col mx-auto'>
 					<h1 className='title my-16'>Featured Work</h1>
-					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
+					<ul className='flex flex-col'>
 						<li className='center-all lg:flex-row flex-col w-full'>
 							<div className='pink-container box in-progress order-1 lg:order-2 justify-start gap-10 pt-14 overflow-hidden'>
 								<h1 className='text-[#B1806E] text-[64px] leading-[80px] tracking-widest'>petsavvy</h1>
-								<div className='flex'>
-									<PetSavvyMobile1 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
-									<PetSavvyMobile2 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
+								<div className='flex w-full'>
+									<PetSavvyMobile1 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
+									<PetSavvyMobile2 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
 								</div>
 							</div>
 							<div className='odd-section box box-right-text lg:order-2 order-1'>
@@ -126,7 +126,7 @@ const Home = () => {
 						<li className='odd-section center-all lg:flex-row flex-col w-full'>
 							<div className='box box-left-text order-2 lg:order-1'>
 								<h2 className='title pb-4 w-full text-center'>MealPlannr</h2>
-								<p className='w-[461px] mx-auto text-center'>
+								<p className='w-full mx-auto text-center'>
 									Introducing a comprehensive{' '}
 									<span className='highlight odd bold'>
 										grocery list and pantry app that streamlines your culinary journey.{' '}
@@ -145,9 +145,9 @@ const Home = () => {
 								<h1 className='text-[##79719B] text-[64px] leading-[80px] tracking-widest'>
 									mealplannr
 								</h1>
-								<div className='flex'>
-									<MealPlannerMobile1 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
-									<MealPlannerMobile2 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
+								<div className='flex w-full'>
+									<MealPlannerMobile1 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
+									<MealPlannerMobile2 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
 								</div>
 							</div>
 						</li>

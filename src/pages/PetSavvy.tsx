@@ -110,7 +110,7 @@ const PetSavvy = () => {
 			</section>
 			<section className='odd-section w-full min-h-screen center-all flex-col grow text-center snap-start'>
 				<div className='center-all flex-col mx-auto'>
-					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
+					<ul className='flex flex-col'>
 						<li className='center-all lg:flex-row flex-col w-full'>
 							<div className='box box-left-text text-left lg:order-1 order-2'>
 								<h2 className='title pb-4 w-full'>Lo-fi wireframes</h2>
