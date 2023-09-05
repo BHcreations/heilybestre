@@ -156,15 +156,15 @@ const PetSavvy = () => {
 					</ul>
 				</div>
 			</section>
-			<section className='odd-section w-full h-auto snap-start center-all lg:flex-row flex-col grow text-center py-24'>
-				<div className='center-all flex-col m-auto lg:w-[472px] text-left '>
+			<section className='odd-section w-full lg:h-auto h-[550px] snap-start center-all lg:flex-row flex-col grow text-center lg:py-24 px-9  items-baseline'>
+				<div className='center-all flex-col mx-auto lg:w-[472px] text-left h-full'>
 					<h3 className='pb-4 w-full'>Visual exploration and logo drafts</h3>
 					<p className='w-full mx-auto'>
 						Following the moodboard phase, I initiated an exploration of diverse visual styles and logo
 						ideas to kickstart the design journey.
 					</p>
 				</div>
-				<div className='center-all flex-col m-auto lg:w-[472px] text-left'>
+				<div className='center-all flex-col mx-auto lg:w-[472px] text-left h-full'>
 					<h3 className='pb-4 w-full'>
 						Logo, color scheme, typography, and design systems (work-in-progress)
 					</h3>
@@ -176,7 +176,7 @@ const PetSavvy = () => {
 			</section>
 			<section className='bg-pet-savvy-cover2 bg-cover h-[741px] w-full'></section>
 			<section className='odd-section w-full h-auto snap-start center-all flex-col grow text-center lg:py-32'>
-				<div className='center-all flex-col m-auto w-full p-0 lg:w-[1105px] text-center'>
+				<div className='center-all flex-col m-auto w-full lg:h-auto h-[550px] px-9 lg:w-[1105px] text-center'>
 					<h2 className='title pb-4 w-full'>Hi-fi wireframes and iterations</h2>
 					<p className='text-base w-full mx-auto'>
 						After laying the groundwork with the first few versions above and finalizing the branding & UI
