@@ -6,7 +6,7 @@ const Layout = () => {
 	return (
 		<>
 			<Header />
-			<main className='snap-y snap-mandatory bg-white overflow-y-scroll'>
+			<main className='snap-y snap-mandatory overflow-y-scroll'>
 				<Outlet />
 			</main>
 			<Footer />

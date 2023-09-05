@@ -1,47 +1,35 @@
-import { Menu, Transition } from '@headlessui/react';
-import { Bars3Icon } from '@heroicons/react/20/solid';
 import { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+import { ReactComponent as Logo } from '../../public/images/heilyb.svg';
+import { Bars3Icon } from '@heroicons/react/20/solid';
 import { Link } from 'react-router-dom';
 import { classNames } from '../helpers/styles';
 
 const Header = () => {
 	return (
 		<header>
-			<nav className='bg-transparent lg:px-52 w-full px-6'>
-				<div className='relative flex flex-wrap justify-between items-center mx-auto max-w-screen-xl h-20 font-display'>
-					<div className='flex items-center gap-10'>
-						{/* <a className='text-[#898EA2] text-xl font-black'>LOGO</a> */}
-						{/* <a className='text-[#41434D] text-xl font-medium tracking-[0.8px]'>HEILY BESTRE</a> */}
+			<nav className='sm:bg-transparent w-full mx-auto px-6 lg:w-[1106px]'>
+				<div className='relative flex flex-wrap justify-between items-center w-full h-20 font-display'>
+					<div className='flex items-center'>
 						<Link to='/'>
-							<img src='/images/heilyb.svg' className='text-[#6D758F] w-full h-16' />
+							<Logo className='text-[#6D758F] w-full h-[38px]' />
 						</Link>
 					</div>
-					<div className='lg:flex items-center gap-16 hidden'>
-						<Link
-							to='/'
-							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
-						>
+					<div className='sm:flex items-center gap-12 h-12 hidden'>
+						<Link to='/' className='font-avenir leading-6 text-base font-medium tracking-[0.4px]'>
 							HOME
 						</Link>
-						<Link
-							to='/about'
-							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
-						>
+						<Link to='/about' className='font-avenir leading-6 text-base font-medium tracking-[0.4px]'>
 							ABOUT
 						</Link>
-						<Link
-							to='/'
-							className='text-neutral-600 font-poppins leading-6 text-base font-medium tracking-[0.4px]'
-						>
+						<Link to='/' className='font-avenir leading-6 text-base font-medium tracking-[0.4px]'>
 							RESUME
 						</Link>
 						<Link to='/'>
-							<button className='btn bg-neutral-600 text-neutral-100 text-sm font-medium w-64 tracking-[0.8px]'>
-								WORK WITH ME
-							</button>
+							<button className='btn text-sm font-semibold tracking-[0.8px]'>WORK WITH ME</button>
 						</Link>
 					</div>
-					<Menu as='div' className='lg:hidden relative inline-block text-left'>
+					<Menu as='div' className='sm:hidden relative inline-block text-left'>
 						<div>
 							<Menu.Button>
 								<Bars3Icon className='h-6 w-6 text-[#40434E]' />
@@ -64,8 +52,8 @@ const Header = () => {
 											<Link
 												to='/heilybestre/'
 												className={classNames(
-													active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-													'block px-4 py-2 text-[#A6A9B5] text-xl font-medium tracking-[0.4px]'
+													active ? 'bg-gray-100 text-gray-900' : '',
+													'block px-4 py-2 text-xl font-medium tracking-[0.4px]'
 												)}
 											>
 												home
@@ -77,8 +65,8 @@ const Header = () => {
 											<Link
 												to='/heilybestre/about'
 												className={classNames(
-													active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-													'block px-4 py-2 text-[#A6A9B5] text-xl font-medium tracking-[0.4px]'
+													active ? 'bg-gray-100 text-gray-900' : '',
+													'block px-4 py-2 text-xl font-medium tracking-[0.4px]'
 												)}
 											>
 												about
