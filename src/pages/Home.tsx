@@ -30,7 +30,7 @@ const Home = () => {
 				<div className=' h-full lg:w-[1106px] w-[361px] mx-auto flex flex-col lg:flex-row lg:gap-16 lg:mb-16'>
 					<div className='mb-12 lg:mb-0'>
 						<img
-							src='/images/design-process-1.jpg'
+							src='/images/design-process-1.png'
 							alt='design process 1'
 							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
 						/>
@@ -51,7 +51,7 @@ const Home = () => {
 					</div>
 					<div className='mb-12 lg:mb-0'>
 						<img
-							src='/images/design-process-2.jpg'
+							src='/images/design-process-2.png'
 							alt='design process 2'
 							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
 						/>
@@ -72,7 +72,7 @@ const Home = () => {
 					</div>
 					<div className='mb-12 lg:mb-0'>
 						<img
-							src='/images/design-process-3.jpg'
+							src='/images/design-process-3.png'
 							alt='design process 3'
 							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
 						/>
