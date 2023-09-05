@@ -75,7 +75,7 @@ const MealPlannr = () => {
 				</div>
 			</section>
 			<section className='w-full snap-start center-all flex-col grow text-center'>
-				<div className='center-all flex-wrap flex-col lg:mt-20 mt-12 lg:mb-12 mb-5 lg:w-[1106px] w-[320px] gap-7'>
+				<div className='center-all flex-wrap flex-col lg:mt-20 mt-12 lg:mb-12 mb-5 lg:w-[1106px] sm:w-[600px] w-full px-9 gap-7'>
 					<h1 className='lg:title text-[32px]'>Laying the groundwork</h1>
 					<p>
 						This personal project is in its initial stages, with my partner developer, Brian. We kicked off
@@ -85,9 +85,9 @@ const MealPlannr = () => {
 				</div>
 			</section>
 
-			<section className='bg-meal-plannr-lofi bg-cover h-[700px] w-full'></section>
+			<section className='bg-meal-plannr-lofi bg-cover h-[700px] w-full bg-center'></section>
 
-			<section className='bg-meal-plannr-cover2 bg-cover h-[700px] w-full'></section>
+			<section className='bg-meal-plannr-cover2 bg-cover h-[700px] w-full bg-center'></section>
 		</>
 	);
 };

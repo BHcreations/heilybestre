@@ -73,7 +73,7 @@ const PetSavvy = () => {
 				</div>
 			</section>
 			<section className='w-full snap-start center-all flex-col grow text-center'>
-				<div className='center-all flex-wrap flex-col lg:mt-20 mt-12 lg:mb-12 mb-5 lg:w-[1106px] w-[320px] gap-7'>
+				<div className='center-all flex-wrap flex-col lg:mt-20 mt-12 lg:mb-12 mb-5 lg:w-[1106px] sm:w-[600px] w-full px-9 gap-7'>
 					<h1 className='lg:title text-[32px]'>Laying the groundwork</h1>
 					<p>
 						By <span className='highlight bold'>ideating rough sketches, userflows, and sitemap,</span> I
@@ -83,7 +83,7 @@ const PetSavvy = () => {
 					</p>
 				</div>
 				<div className=' flex flex-col grow mx-auto w-full'>
-					<div className='h-[1000px] relative w-full bg-neutral-100'>
+					<div className='lg:h-[1000px] h-[550px] relative w-full bg-neutral-100'>
 						<Carousel
 							name='groundwork'
 							items={[
@@ -96,7 +96,7 @@ const PetSavvy = () => {
 				</div>
 			</section>
 			<section className='w-full h-auto snap-start center-all flex-col grow text-center'>
-				<div className='center-all flex-wrap flex-col lg:my-[100px] my-16 lg:w-[1106px] w-[320px] gap-6'>
+				<div className='center-all flex-wrap flex-col lg:my-[100px] my-16 lg:w-[1106px] sm:w-[600px] w-full px-9 gap-6'>
 					<h1 className='g:title text-[32px]'>UI requirement document</h1>
 					<p>
 						After identifying the key screens and user flows, I created a{' '}
@@ -111,7 +111,7 @@ const PetSavvy = () => {
 			<section className='odd-section w-full min-h-screen center-all flex-col grow text-center snap-start'>
 				<div className='center-all flex-col mx-auto'>
 					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
-						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
+						<li className='center-all lg:flex-row flex-col w-full'>
 							<div className='box box-left-text text-left lg:order-1 order-2'>
 								<h2 className='title pb-4 w-full'>Lo-fi wireframes</h2>
 								<p className='w-full mx-auto'>
@@ -132,7 +132,7 @@ const PetSavvy = () => {
 								/>
 							</div>
 						</li>
-						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
+						<li className='center-all lg:flex-row flex-col w-full'>
 							<div className='bg-[#F5E6C5] box order-1 lg:order-2'>
 								<img
 									src='/images/petsavvy-branding.png'
@@ -174,7 +174,7 @@ const PetSavvy = () => {
 					</p>
 				</div>
 			</section>
-			<section className='bg-pet-savvy-cover2 bg-cover h-[741px] w-full'></section>
+			<section className='bg-pet-savvy-cover2 bg-cover h-[741px] w-full bg-center'></section>
 			<section className='odd-section w-full h-auto snap-start center-all flex-col grow text-center lg:py-32'>
 				<div className='center-all flex-col m-auto w-full lg:h-auto h-[550px] px-9 lg:w-[1105px] text-center'>
 					<h2 className='title pb-4 w-full'>Hi-fi wireframes and iterations</h2>
@@ -185,7 +185,7 @@ const PetSavvy = () => {
 					</p>
 				</div>
 			</section>
-			<section className='bg-pet-savvy-cover bg-cover h-[741px] w-full'></section>
+			<section className='bg-pet-savvy-cover bg-cover h-[741px] w-full bg-center'></section>
 		</>
 	);
 };

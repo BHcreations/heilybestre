@@ -32,7 +32,7 @@ const Home = () => {
 						<img
 							src='/images/design-process-1.png'
 							alt='design process 1'
-							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
+							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]  hover:scale-105 transition-all'
 						/>
 						<div className='text-center'>
 							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Emphatize & Design</h6>
@@ -53,7 +53,7 @@ const Home = () => {
 						<img
 							src='/images/design-process-2.png'
 							alt='design process 2'
-							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
+							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]  hover:scale-105 transition-all'
 						/>
 						<div className='text-center'>
 							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Ideate</h6>
@@ -74,7 +74,7 @@ const Home = () => {
 						<img
 							src='/images/design-process-3.png'
 							alt='design process 3'
-							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
+							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]  hover:scale-105 transition-all'
 						/>
 						<div className='text-center'>
 							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Prototype & Test</h6>
@@ -97,12 +97,12 @@ const Home = () => {
 				<div className='center-all flex-col mx-auto'>
 					<h1 className='title my-16'>Featured Work</h1>
 					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
-						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
+						<li className='center-all lg:flex-row flex-col w-full'>
 							<div className='pink-container box in-progress order-1 lg:order-2 justify-start gap-10 pt-14 overflow-hidden'>
 								<h1 className='text-[#B1806E] text-[64px] leading-[80px] tracking-widest'>petsavvy</h1>
 								<div className='flex'>
-									<PetSavvyMobile1 className='lg:w-full w-10/12' />
-									<PetSavvyMobile2 className='lg:w-full w-10/12' />
+									<PetSavvyMobile1 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
+									<PetSavvyMobile2 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
 								</div>
 							</div>
 							<div className='odd-section box box-right-text lg:order-2 order-1'>
@@ -123,7 +123,7 @@ const Home = () => {
 								</Link>
 							</div>
 						</li>
-						<li className='odd-section center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
+						<li className='odd-section center-all lg:flex-row flex-col w-full'>
 							<div className='box box-left-text order-2 lg:order-1'>
 								<h2 className='title pb-4 w-full text-center'>MealPlannr</h2>
 								<p className='w-[461px] mx-auto text-center'>
@@ -146,8 +146,8 @@ const Home = () => {
 									mealplannr
 								</h1>
 								<div className='flex'>
-									<MealPlannerMobile1 className='lg:w-full w-10/12' />
-									<MealPlannerMobile2 className='lg:w-full w-10/12' />
+									<MealPlannerMobile1 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
+									<MealPlannerMobile2 className='lg:w-full w-10/12 hover:scale-105 transition-all' />
 								</div>
 							</div>
 						</li>

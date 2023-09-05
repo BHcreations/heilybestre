@@ -50,7 +50,7 @@ const Header = () => {
 									<Menu.Item>
 										{({ active }) => (
 											<Link
-												to='/heilybestre/'
+												to='/'
 												className={classNames(
 													active ? 'bg-gray-100 text-gray-900' : '',
 													'block px-4 py-2 text-xl font-medium tracking-[0.4px]'
@@ -63,7 +63,7 @@ const Header = () => {
 									<Menu.Item>
 										{({ active }) => (
 											<Link
-												to='/heilybestre/about'
+												to='/about'
 												className={classNames(
 													active ? 'bg-gray-100 text-gray-900' : '',
 													'block px-4 py-2 text-xl font-medium tracking-[0.4px]'
