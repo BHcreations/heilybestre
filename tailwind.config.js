@@ -3,9 +3,12 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			screens: {
+				lg: '1106px',
+			},
 			fontFamily: {
-				abhaya: ['"Abhaya Libre ExtraBold"'],
-				poppins: ['Poppins'],
+				abhaya: ['"Abhaya Libre Medium"'],
+				avenir: ['Avenir'],
 			},
 			colors: {
 				neutral: {
@@ -15,6 +18,10 @@ export default {
 					500: '#B4B9C9',
 					600: '#6D758F',
 				},
+			},
+			backgroundImage: {
+				'pet-savvy-cover': "url('/images/petsavvy-cover.png')",
+				'pet-savvy-cover2': "url('/images/petsavvy-cover2.png')",
 			},
 		},
 	},
