@@ -7,14 +7,14 @@ const Footer = () => {
 	return (
 		<footer className='lg:h-32 h-72 sm:pt-12 py-6'>
 			<div className='flex items-center lg:flex-row flex-col justify-between mx-auto lg:w-[1108px] sm:h-full py-6'>
-				<Logo className='logo text-[#6D758F] h-[38px] order-1' />
+				<Logo className='logo h-[38px] order-1' />
 				<div className='flex text-center order-3 lg:order-2 w-96 lg:w-fit lg:border-none border-t border-solid border-neutral-400'>
 					<span className='text-base sm:text-sm'>Copyright © 2023 Heily Bestre | All Rights Reserved</span>
 				</div>
 				<nav className='flex flex-wrap items-center gap-4 lg:order-3 order-2'>
-					<InstagramLogo className='text-neutral-600 w-6 h-6' />
-					<LinkedinLogo className='text-neutral-600 w-6 h-6' />
-					<DribbleLogo className='text-neutral-600 w-6 h-6' />
+					<InstagramLogo className='w-6 h-6' />
+					<LinkedinLogo className='w-6 h-6' />
+					<DribbleLogo className='w-6 h-6' />
 				</nav>
 			</div>
 		</footer>

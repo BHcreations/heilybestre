@@ -5,6 +5,7 @@
 		height: 100%;
 		position: relative;
 		background-color: #e9e4dd;
+		color: #575b63;
 	}
 	div#root::before {
 		content: '';
@@ -56,11 +57,11 @@
 	}
 
 	.box.box-left-text {
-		@apply lg:pr-[111px] lg:pl-[calc(50%-111px-430px)] p-0 text-left;
+		@apply lg:pr-[111px] lg:pl-[calc(50%-111px-430px)] p-0;
 	}
 
 	.box.box-right-text {
-		@apply lg:pl-[111px] lg:pr-[calc(50%-111px-430px)] p-0 text-left;
+		@apply lg:pl-[111px] lg:pr-[calc(50%-111px-430px)] p-0;
 	}
 
 	/* highlight */
@@ -82,7 +83,7 @@
 		@apply px-2;
 	}
 	.highlight.bold {
-		@apply font-extrabold;
+		@apply font-medium;
 	}
 	.highlight.odd {
 		background: linear-gradient(to top, rgba(167, 137, 120, 0.5) 70%, transparent 50%);
@@ -91,7 +92,7 @@
 
 	/* section */
 	.odd-section {
-		@apply bg-[#F5F5F5] bg-opacity-80;
+		@apply bg-[#F5F5F5] bg-opacity-50;
 	}
 
 	/* carousel */

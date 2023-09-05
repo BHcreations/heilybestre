@@ -12,7 +12,7 @@ const Header = () => {
 				<div className='relative flex flex-wrap justify-between items-center w-full h-20 font-display'>
 					<div className='flex items-center'>
 						<Link to='/'>
-							<Logo className='text-[#6D758F] w-full h-[38px]' />
+							<Logo className='logo w-full h-[38px]' />
 						</Link>
 					</div>
 					<div className='sm:flex items-center gap-12 h-12 hidden'>
