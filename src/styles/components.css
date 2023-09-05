@@ -86,7 +86,7 @@
 		@apply font-medium;
 	}
 	.highlight.odd {
-		background: linear-gradient(to top, rgba(167, 137, 120, 0.5) 70%, transparent 50%);
+		background: linear-gradient(to top, rgb(221 198 186 / 50%) 70%, transparent 50%);
 		@apply font-normal px-2;
 	}
 
