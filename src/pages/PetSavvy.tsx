@@ -8,8 +8,9 @@ const PetSavvy = () => {
 			<section className='w-full min-h-screen snap-start center-all flex-col grow'>
 				<img src='/images/petsavvy-cover.png' className='object-cover flex justify-center grow w-full h-full' />
 				{/* <div className='bg-pet-savvy bg-cover flex justify-center grow w-full h-full'></div> */}
-				<div className='center-all text-center my-16'>
-					<h1 className='text-neutral-600 lg:text-5xl text-4xl'>Pet Savvy</h1>
+				<div className='center-all text-center my-16  flex flex-col gap-3'>
+					<h1 className='lg:text-5xl text-4xl'>Pet Savvy</h1>
+					<p>Your One-Stop Solution for All Things Pet Care</p>
 				</div>
 			</section>
 			<section className='odd-section w-full snap-start center-all grow'>
