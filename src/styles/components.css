@@ -57,11 +57,11 @@
 	}
 
 	.box.box-left-text {
-		@apply lg:pr-[111px] lg:pl-[calc(50%-111px-430px)] p-0;
+		@apply lg:pr-[111px] lg:pl-[calc(50%-111px-430px)] px-9;
 	}
 
 	.box.box-right-text {
-		@apply lg:pl-[111px] lg:pr-[calc(50%-111px-430px)] p-0;
+		@apply lg:pl-[111px] lg:pr-[calc(50%-111px-430px)] px-9;
 	}
 
 	.box.in-progress {
