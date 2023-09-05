@@ -3,7 +3,6 @@ import { Menu, Transition } from '@headlessui/react';
 import { ReactComponent as Logo } from '../../public/images/heilyb.svg';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 import { Link } from 'react-router-dom';
-import { classNames } from '../helpers/styles';
 
 const Header = () => {
 	return (
@@ -22,10 +21,15 @@ const Header = () => {
 						<Link to='/about' className='font-avenir leading-6 text-base font-medium tracking-[0.4px]'>
 							ABOUT
 						</Link>
-						<Link to='/' className='font-avenir leading-6 text-base font-medium tracking-[0.4px]'>
+						<Link
+							to='/files/resume.pdf'
+							className='font-avenir leading-6 text-base font-medium tracking-[0.4px]'
+							target='_blank'
+							download
+						>
 							RESUME
 						</Link>
-						<Link to='/'>
+						<Link to='/' className='hidden'>
 							<button className='btn text-sm font-semibold tracking-[0.8px]'>WORK WITH ME</button>
 						</Link>
 					</div>
@@ -45,33 +49,31 @@ const Header = () => {
 							leaveFrom='transform opacity-100 scale-100'
 							leaveTo='transform opacity-0 scale-95'
 						>
-							<Menu.Items className='absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+							<Menu.Items className='absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50'>
 								<div className='py-1'>
 									<Menu.Item>
-										{({ active }) => (
-											<Link
-												to='/'
-												className={classNames(
-													active ? 'bg-gray-100 text-gray-900' : '',
-													'block px-4 py-2 text-xl font-medium tracking-[0.4px]'
-												)}
-											>
-												home
+										{() => (
+											<Link to='/' className='block px-4 py-2 font-medium tracking-[0.4px]'>
+												HOME
 											</Link>
 										)}
 									</Menu.Item>
 									<Menu.Item>
-										{({ active }) => (
-											<Link
-												to='/about'
-												className={classNames(
-													active ? 'bg-gray-100 text-gray-900' : '',
-													'block px-4 py-2 text-xl font-medium tracking-[0.4px]'
-												)}
-											>
-												about
+										{() => (
+											<Link to='/about' className='block px-4 py-2 font-medium tracking-[0.4px]'>
+												ABOUT
 											</Link>
 										)}
+									</Menu.Item>
+									<Menu.Item>
+										<Link
+											to='/files/resume.pdf'
+											className='block px-4 py-2 font-medium tracking-[0.4px]'
+											target='_blank'
+											download
+										>
+											RESUME
+										</Link>
 									</Menu.Item>
 								</div>
 							</Menu.Items>

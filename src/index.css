@@ -89,7 +89,8 @@
 		position: relative;
 	}
 	p,
-	span {
+	span,
+	a {
 		@apply text-base font-normal font-avenir;
 	}
 	p {

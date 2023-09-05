@@ -16,7 +16,7 @@ const Home = () => {
 						</span>
 					</h1>
 					<span className='tracking-[0.48px] mb-9'>Welcome to my portfolio.</span>
-					<button className='btn'>GET IN TOUCH</button>
+					<button className='btn hidden'>GET IN TOUCH</button>
 				</div>
 			</section>
 			<section className='odd-section w-full snap-start center-all flex-col grow lg:gap-12 gap-8'>

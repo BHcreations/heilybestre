@@ -1,9 +1,9 @@
 const About = () => {
 	return (
 		<section className='h-full min-h-[800px] flex-container flex-col text-center lg:w-[1000px] sm:w-[600px] w-[390px] m-auto py-24'>
-			<div className='flex justify-center items-center gap-28'>
-				<img src='/images/about-me.jpg' alt='about-me' className='w-1/3' />
-				<div>
+			<div className='flex lg:flex-row flex-col justify-center items-center gap-28'>
+				<img src='/images/about-me.jpg' alt='about-me' className='lg:w-1/3 w-full lg:order-1 order-2' />
+				<div className='lg:order-2 order-1'>
 					<h1 className='w-full text-center mb-6 lg:text-5xl text-4xl'>About Me</h1>
 					<p className='indent-10 py-3'>
 						I'm a dedicated UX/UI designer based in Manila, Philippines, with a diverse background firmly
