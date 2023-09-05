@@ -97,7 +97,7 @@
 	}
 	.highlight.odd {
 		background: linear-gradient(to top, rgb(221 198 186 / 50%) 70%, transparent 50%);
-		@apply font-normal px-2;
+		@apply px-2;
 	}
 
 	/* section */

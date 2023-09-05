@@ -105,11 +105,11 @@ const Home = () => {
 									<PetSavvyMobile2 className='lg:w-full w-10/12' />
 								</div>
 							</div>
-							<div className='box box-right-text lg:order-2 order-1'>
+							<div className='odd-section box box-right-text lg:order-2 order-1'>
 								<h2 className='title pb-4 w-full text-center'>PetSavvy</h2>
 								<p className='w-full mx-auto text-center'>
 									In a world where pets are cherished members of the family, the{' '}
-									<span className='highlight'>
+									<span className='highlight odd bold'>
 										PetSavvy was created to bridge the gap between pet owners and businesses in the
 										pet care industry.
 									</span>{' '}
@@ -123,12 +123,12 @@ const Home = () => {
 								</Link>
 							</div>
 						</li>
-						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
+						<li className='odd-section center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
 							<div className='box box-left-text order-2 lg:order-1'>
 								<h2 className='title pb-4 w-full text-center'>MealPlannr</h2>
 								<p className='w-[461px] mx-auto text-center'>
 									Introducing a comprehensive{' '}
-									<span className='highlight'>
+									<span className='highlight odd bold'>
 										grocery list and pantry app that streamlines your culinary journey.{' '}
 									</span>
 									Seamlessly plan, track, and optimize your meals by effortlessly managing your
