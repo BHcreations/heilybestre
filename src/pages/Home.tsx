@@ -89,21 +89,21 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			<section className='text-center snap-start min-h-screen mb-7'>
+			<section className='w-full min-h-screen center-all flex-col grow text-center snap-start'>
 				<div className='center-all flex-col mx-auto'>
 					<h1 className='title pt-16'>Featured Work</h1>
-					<ul className='flex flex-col sm:mb-6'>
-						<li className='center-all lg:flex-row flex-col gap-20 sm:gap-6 m-auto lg:py-20 py-12'>
-							<div className='w-[542px] h-[452px] rounded-3xl center-all bg-neutral-300 grow'>
+					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
+						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
+							<div className='pink-container box order-1 lg:order-2'>
 								<img
 									src='/images/icon-square-icon.svg'
 									alt='image'
 									className='text-neutral-600 h-16 w-16'
 								/>
 							</div>
-							<div className='center-all flex-col w-[542px] m-auto'>
-								<h2 className='pb-4'>PetSavvy</h2>
-								<p className='w-[461px] mx-auto'>
+							<div className='box box-right-text lg:order-2 order-1'>
+								<h2 className='title pb-4 w-full'>PetSavvy</h2>
+								<p className='w-full mx-auto'>
 									In a world where pets are cherished members of the family, the PetSavvy was created
 									to bridge the gap between pet owners and businesses in the pet care industry. This
 									case study explores how the app addresses pain points for both B2C users and B2B
@@ -117,40 +117,22 @@ const Home = () => {
 							</div>
 						</li>
 						<li className='center-all lg:flex-row flex-col gap-20 sm:gap-6'>
-							<div className='center-all flex-col w-[542px] m-auto order-2 lg:order-1'>
-								<h2 className='pb-4'>PetSavvy Business Dashboard</h2>
+							<div className='box box-left-text order-2 lg:order-1'>
+								<h2 className='title pb-4 w-full'>MealPlannr</h2>
 								<p className='w-[461px] mx-auto'>
-									Elevating the Pet Care Industry: Unveiling the business dashboard of PetSavvy—an app
-									that unites pet owners and industry businesses, alleviating pain points for B2C
-									users and B2B service providers through a seamless, rewarding experience
-								</p>
-								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
-							</div>
-							<div className='w-[542px] h-[452px] rounded-3xl center-all bg-neutral-300 grow  order-1 lg:order-2'>
-								<img
-									src='/images/icon-square-icon.svg'
-									alt='image'
-									className='text-neutral-600 h-16 w-16'
-								/>
-							</div>
-						</li>
-						<li className='center-all lg:flex-row flex-col gap-20 sm:gap-6'>
-							<div className='w-[542px] h-[452px] rounded-3xl center-all bg-neutral-300 grow'>
-								<img
-									src='/images/icon-square-icon.svg'
-									alt='image'
-									className='text-neutral-600 h-16 w-16'
-								/>
-							</div>
-							<div className='center-all flex-col w-[542px] m-auto'>
-								<h2 className='pb-4'>Meal Planner App*</h2>
-								<p className='text-base w-[461px] mx-auto'>
 									Introducing a comprehensive grocery list and pantry app that streamlines your
 									culinary journey. Seamlessly plan, track, and optimize your meals by effortlessly
 									managing your shopping list and pantry inventory, ensuring you're always
 									well-equipped to create delicious dishes.
 								</p>
 								<button className='btn secondary font-semibold mt-6 lg:mt-8'>READ CASE STUDY</button>
+							</div>
+							<div className='purple-container box order-1 lg:order-2'>
+								<img
+									src='/images/icon-square-icon.svg'
+									alt='image'
+									className='text-neutral-600 h-16 w-16'
+								/>
 							</div>
 						</li>
 					</ul>

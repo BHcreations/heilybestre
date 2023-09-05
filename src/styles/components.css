@@ -41,6 +41,28 @@
 		@apply bg-none text-[#575B63];
 	}
 
+	/* box containers */
+	.pink-container {
+		background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 0%, rgba(198, 127, 101, 0) 100%),
+			#ead7d0;
+	}
+	.purple-container {
+		background: radial-gradient(50% 50% at 50% 50%, rgba(168, 152, 194, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),
+			#d4d2dc;
+	}
+
+	.box {
+		@apply center-all flex-col grow lg:w-1/2 lg:h-[613px] w-[361px] h-[361px] m-auto;
+	}
+
+	.box.box-left-text {
+		@apply lg:pr-[111px] lg:pl-[calc(50%-111px-430px)] p-0 text-left;
+	}
+
+	.box.box-right-text {
+		@apply lg:pl-[111px] lg:pr-[calc(50%-111px-430px)] p-0 text-left;
+	}
+
 	/* highlight */
 	section:has(.hero) h1 > span {
 		@apply text-[#575B63] px-5;

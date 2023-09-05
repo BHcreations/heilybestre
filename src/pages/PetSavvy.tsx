@@ -112,9 +112,9 @@ const PetSavvy = () => {
 				<div className='center-all flex-col mx-auto'>
 					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
 						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
-							<div className='center-all flex-col m-auto w-1/2 lg:pr-[111px] lg:pl-[calc(50%-111px-430px)] p-0 text-left lg:order-1 order-2'>
-								<h2 className='title pb-4 text-neutral-600 w-full'>Lo-fi wireframes</h2>
-								<p className='text-base w-full mx-auto'>
+							<div className='box box-left-text lg:order-1 order-2'>
+								<h2 className='title pb-4 w-full'>Lo-fi wireframes</h2>
+								<p className='w-full mx-auto'>
 									Using the preliminary sketches and UI Requirements as a foundation, I began crafting
 									digitized, low-fidelity wireframes that adhere to the sketch concepts. This approach
 									enables me{' '}
@@ -124,7 +124,7 @@ const PetSavvy = () => {
 									</span>
 								</p>
 							</div>
-							<div className='lg:w-1/2 lg:h-[613px] center-all grow order-1 lg:order-2 w-[361px] h-[361px] sm:m-auto'>
+							<div className='purple-container box order-1 lg:order-2'>
 								<img
 									src='/images/petsavvy-lofi-wireframes.png'
 									alt='Lofi Wireframes'
@@ -133,16 +133,16 @@ const PetSavvy = () => {
 							</div>
 						</li>
 						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
-							<div className='lg:w-1/2 lg:h-[613px] center-all bg-[#F5E6C5] grow order-1 lg:order-2 w-[361px] h-[361px] sm:m-auto'>
+							<div className='bg-[#F5E6C5] box order-1 lg:order-2'>
 								<img
 									src='/images/petsavvy-branding.png'
 									alt='Branding'
 									className='object-contain h-full w-full'
 								/>
 							</div>
-							<div className='center-all flex-col w-1/2 m-auto lg:order-2 order-1 lg:pl-[111px] lg:pr-[calc(50%-111px-430px)] p-0 text-left'>
-								<h2 className='title pb-4 text-neutral-600 w-full'>Branding</h2>
-								<p className='text-base w-full mx-auto mb-3'>
+							<div className='box box-right-text lg:order-2 order-1'>
+								<h2 className='title pb-4 w-full'>Branding</h2>
+								<p className='w-full mx-auto mb-3'>
 									Before diving into logo and style design, I curated different mood board directions
 									from the diverse array of inspirations I gathered from Pinterest,
 									<span className='highlight'>
@@ -150,7 +150,7 @@ const PetSavvy = () => {
 										Friendly, Playful, Informative.
 									</span>
 								</p>
-								<p className='text-base w-full mx-auto'>This is the direction chosen by the client.</p>
+								<p className='w-full mx-auto'>This is the direction chosen by the client.</p>
 							</div>
 						</li>
 					</ul>
@@ -159,7 +159,7 @@ const PetSavvy = () => {
 			<section className='odd-section w-full h-auto snap-start center-all lg:flex-row flex-col grow text-center py-24'>
 				<div className='center-all flex-col m-auto lg:w-[472px] text-left '>
 					<h3 className='pb-4 w-full'>Visual exploration and logo drafts</h3>
-					<p className='text-base w-full mx-auto'>
+					<p className='w-full mx-auto'>
 						Following the moodboard phase, I initiated an exploration of diverse visual styles and logo
 						ideas to kickstart the design journey.
 					</p>
@@ -168,7 +168,7 @@ const PetSavvy = () => {
 					<h3 className='pb-4 w-full'>
 						Logo, color scheme, typography, and design systems (work-in-progress)
 					</h3>
-					<p className='text-base w-full mx-auto'>
+					<p className='w-full mx-auto'>
 						After the client selects the preferred visual style and logo concept, I will proceed to refine
 						the logo, establish the color palette, typography, and design systems.
 					</p>
