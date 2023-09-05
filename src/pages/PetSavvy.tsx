@@ -95,12 +95,12 @@ const PetSavvy = () => {
 					</div>
 				</div>
 			</section>
-			<section className='odd-section w-full h-auto snap-start center-all flex-col grow text-center'>
+			<section className='w-full h-auto snap-start center-all flex-col grow text-center'>
 				<div className='center-all flex-wrap flex-col lg:my-[100px] my-16 lg:w-[1106px] w-[320px] gap-6'>
 					<h1 className='g:title text-[32px]'>UI requirement document</h1>
 					<p>
 						After identifying the key screens and user flows, I created a{' '}
-						<span className='highlight odd bold'>
+						<span className='highlight bold'>
 							UI Requirements document to amplify the accumulated insights.
 						</span>{' '}
 						This document acts as a guide for the upcoming wireframing phase, especially useful if the
@@ -108,7 +108,7 @@ const PetSavvy = () => {
 					</p>
 				</div>
 			</section>
-			<section className='w-full min-h-screen center-all flex-col grow text-center snap-start'>
+			<section className='odd-section w-full min-h-screen center-all flex-col grow text-center snap-start'>
 				<div className='center-all flex-col mx-auto'>
 					<ul className='flex flex-col lg:gap-0 gap-[100px]'>
 						<li className='center-all lg:flex-row flex-col w-full lg:gap-0 gap-6'>
@@ -118,7 +118,7 @@ const PetSavvy = () => {
 									Using the preliminary sketches and UI Requirements as a foundation, I began crafting
 									digitized, low-fidelity wireframes that adhere to the sketch concepts. This approach
 									enables me{' '}
-									<span className='highlight'>
+									<span className='highlight bold odd'>
 										to implement UI requirements, establish proper element hierarchy, and prevent
 										excessive focus on intricate design aspects.
 									</span>
@@ -145,7 +145,7 @@ const PetSavvy = () => {
 								<p className='w-full mx-auto mb-3'>
 									Before diving into logo and style design, I curated different mood board directions
 									from the diverse array of inspirations I gathered from Pinterest,
-									<span className='highlight'>
+									<span className='highlight bold odd'>
 										all aligned with the distinctive attributes drawn from the project brief:
 										Friendly, Playful, Informative.
 									</span>
@@ -156,7 +156,7 @@ const PetSavvy = () => {
 					</ul>
 				</div>
 			</section>
-			<section className='odd-section w-full lg:h-auto h-[550px] snap-start center-all lg:flex-row flex-col grow text-center lg:py-24 px-9  items-baseline'>
+			<section className='w-full lg:h-auto h-[550px] snap-start center-all lg:flex-row flex-col grow text-center lg:py-24 px-9  items-baseline'>
 				<div className='center-all flex-col mx-auto lg:w-[472px] text-left h-full'>
 					<h3 className='pb-4 w-full'>Visual exploration and logo drafts</h3>
 					<p className='w-full mx-auto'>
