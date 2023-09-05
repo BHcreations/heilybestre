@@ -5,11 +5,11 @@ import { ReactComponent as DribbleLogo } from '../../public/images/social-media-
 
 const Footer = () => {
 	return (
-		<footer className='lg:h-32 h-72 sm:pt-12 py-6'>
-			<div className='flex items-center lg:flex-row flex-col justify-between mx-auto lg:w-[1108px] sm:h-full py-6'>
+		<footer className='lg:h-32 h-48 lg:pt-12 py-6'>
+			<div className='flex items-center lg:flex-row flex-col justify-between mx-auto lg:w-[1108px] lg:h-full gap-3 py-6'>
 				<Logo className='logo h-[38px] order-1' />
 				<div className='flex text-center order-3 lg:order-2 w-96 lg:w-fit lg:border-none border-t border-solid border-neutral-400'>
-					<span className='text-base sm:text-sm'>Copyright © 2023 Heily Bestre | All Rights Reserved</span>
+					<span className='text-base lg:text-sm'>Copyright © 2023 Heily Bestre | All Rights Reserved</span>
 				</div>
 				<nav className='flex flex-wrap items-center gap-4 lg:order-3 order-2'>
 					<InstagramLogo className='w-6 h-6' />

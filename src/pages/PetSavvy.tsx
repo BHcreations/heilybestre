@@ -73,13 +73,14 @@ const PetSavvy = () => {
 				</div>
 			</section>
 			<section className='w-full snap-start center-all flex-col grow text-center'>
-				<div className='center-all flex-wrap flex-col lg:mt-20 mt-12 lg:mb-12 mb-5 lg:w-[1106px] sm:w-[600px] w-full px-9 gap-7'>
+				<div className='center-all flex-wrap flex-col lg:mt-20 mt-12 lg:mb-12 mb-10 lg:w-[1106px] sm:w-[600px] w-full px-9 gap-7'>
 					<h1 className='lg:title text-[32px]'>Laying the groundwork</h1>
 					<p>
-						By <span className='highlight bold'>ideating rough sketches, userflows, and sitemap,</span> I
-						carefully crafted the blueprint for seamless user experiences, ensuring clear navigation. This{' '}
-						<span className='highlight bold'>process also helps me define product features</span> and their
-						development priorities.
+						By<span className='highlight bold'>ideating rough sketches, userflows, and sitemap,</span> I
+						carefully crafted the blueprint for
+						<span className='highlight bold'>seamless user experiences</span>, ensuring clear navigation.
+						This process also<span className='highlight bold'>helps me define product features</span> and
+						their development priorities.
 					</p>
 				</div>
 				<div className=' flex flex-col grow mx-auto w-full'>
@@ -99,12 +100,10 @@ const PetSavvy = () => {
 				<div className='center-all flex-wrap flex-col lg:my-[100px] my-16 lg:w-[1106px] sm:w-[600px] w-full px-9 gap-6'>
 					<h1 className='g:title text-[32px]'>UI requirement document</h1>
 					<p>
-						After identifying the key screens and user flows, I created a{' '}
-						<span className='highlight bold'>
-							UI Requirements document to amplify the accumulated insights.
-						</span>{' '}
-						This document acts as a guide for the upcoming wireframing phase, especially useful if the
-						design process starts to feel intricate.
+						After identifying the key screens and user flows, I created a UI Requirements document
+						<span className='highlight bold'>to amplify the accumulated insights.</span>
+						This document <span className='highlight bold'>acts as a guide</span> for the upcoming
+						wireframing phase, especially useful if the design process starts to feel intricate.
 					</p>
 				</div>
 			</section>
@@ -117,10 +116,12 @@ const PetSavvy = () => {
 								<p className='w-full mx-auto'>
 									Using the preliminary sketches and UI Requirements as a foundation, I began crafting
 									digitized, low-fidelity wireframes that adhere to the sketch concepts. This approach
-									enables me{' '}
+									enables me
+									<span className='highlight bold odd mr-2'>to implement UI requirements,</span>
+									<span className='highlight bold odd'>establish proper element hierarchy,</span>
+									and
 									<span className='highlight bold odd'>
-										to implement UI requirements, establish proper element hierarchy, and prevent
-										excessive focus on intricate design aspects.
+										prevent excessive focus on intricate design aspects.
 									</span>
 								</p>
 							</div>
@@ -156,7 +157,7 @@ const PetSavvy = () => {
 					</ul>
 				</div>
 			</section>
-			<section className='w-full lg:h-auto h-[550px] snap-start center-all lg:flex-row flex-col grow text-center lg:py-24 px-9  items-baseline'>
+			<section className='w-full lg:h-auto h-[550px] snap-start center-all lg:flex-row flex-col grow text-center py-10 lg:py-24 px-9  items-baseline'>
 				<div className='center-all flex-col mx-auto lg:w-[472px] text-left h-full'>
 					<h3 className='pb-4 w-full'>Visual exploration and logo drafts</h3>
 					<p className='w-full mx-auto'>

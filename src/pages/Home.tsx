@@ -98,9 +98,9 @@ const Home = () => {
 					<h1 className='title my-16'>Featured Work</h1>
 					<ul className='flex flex-col'>
 						<li className='center-all lg:flex-row flex-col w-full'>
-							<div className='pink-container box in-progress order-1 lg:order-2 justify-start gap-10 pt-14 overflow-hidden'>
-								<h1 className='text-[#B1806E] text-[64px] leading-[80px] tracking-widest'>petsavvy</h1>
-								<div className='flex w-full'>
+							<div className='pink-container box in-progress order-1 lg:order-2 justify-start sm:gap-10 pt-14 overflow-hidden'>
+								<h1 className='text-[#B1806E] text-[64px] leading-[80px] tracking-wide'>petsavvy</h1>
+								<div className='flex -mt-20 sm:mt-0 w-full'>
 									<PetSavvyMobile1 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
 									<PetSavvyMobile2 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
 								</div>

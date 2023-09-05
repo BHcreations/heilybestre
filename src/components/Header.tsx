@@ -11,7 +11,7 @@ const Header = () => {
 				<div className='relative flex flex-wrap justify-between items-center w-full h-20 font-display'>
 					<div className='flex items-center'>
 						<Link to='/'>
-							<Logo className='logo w-full h-[38px]' />
+							<Logo className='logo w-[100px] sm:w-full h-[38px]' />
 						</Link>
 					</div>
 					<div className='sm:flex items-center gap-12 h-12 hidden'>
@@ -49,7 +49,7 @@ const Header = () => {
 							leaveFrom='transform opacity-100 scale-100'
 							leaveTo='transform opacity-0 scale-95'
 						>
-							<Menu.Items className='absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[60]'>
+							<Menu.Items className='absolute right-0 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[60]'>
 								<div className='py-1'>
 									<Menu.Item>
 										{() => (
