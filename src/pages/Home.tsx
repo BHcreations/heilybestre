@@ -8,7 +8,7 @@ const Home = () => {
 	return (
 		<>
 			<section className='h-[560px] snap-start relative'>
-				<div className='hero flex-container flex-col text-center z-50 m-auto lg:w-[728px] w-[390px]'>
+				<div className='hero flex-container flex-col text-center z-50 m-auto lg:w-[728px] sm:w-[600px] w-[390px]'>
 					<h1 className='mb-6 lg:text-5xl text-4xl'>
 						<span className='highlight bold lg:text-5xl text-4xl'>
 							Hello! I am Heily, a <span>UI/UX Designer</span> and <span>Former Web Developer</span> based
@@ -19,20 +19,20 @@ const Home = () => {
 					<button className='btn'>GET IN TOUCH</button>
 				</div>
 			</section>
-			<section className='odd-section w-full snap-start center-all flex-col grow gap-12'>
-				<div className='center-all flex-wrap flex-col w-[468px] text-center'>
-					<h1 className='title lg:mt-20 mt-12 mb-6'>My Design Process</h1>
+			<section className='odd-section w-full snap-start center-all flex-col grow lg:gap-12 gap-8'>
+				<div className='center-all flex-wrap flex-col w-min-[468px] px-12 text-center'>
+					<h1 className='title lg:mt-20 mt-20 sm:mt-12 lg:mb-6 mb-4'>My Design Process</h1>
 					<span className='text-base'>
 						A glimpse into what you can expect from my design process when you choose to collaborate with
 						me.
 					</span>
 				</div>
-				<div className=' h-full lg:w-[1106px] md:w-[680px] w-[361px] mx-auto flex flex-row lg:gap-16 lg:mb-16'>
-					<div>
+				<div className=' h-full lg:w-[1106px] w-[361px] mx-auto flex flex-col lg:flex-row lg:gap-16 lg:mb-16'>
+					<div className="mb-12 lg:mb-0">
 						<img
 							src='/images/design-process-1.jpg'
 							alt='design process 1'
-							className='shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
+							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
 						/>
 						<div className='text-center'>
 							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Emphatize & Design</h6>
@@ -49,11 +49,11 @@ const Home = () => {
 							</ul>
 						</div>
 					</div>
-					<div>
+					<div className="mb-12 lg:mb-0">
 						<img
 							src='/images/design-process-2.jpg'
 							alt='design process 2'
-							className='shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
+							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
 						/>
 						<div className='text-center'>
 							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Ideate</h6>
@@ -70,11 +70,11 @@ const Home = () => {
 							</ul>
 						</div>
 					</div>
-					<div>
+					<div className="mb-12 lg:mb-0">
 						<img
 							src='/images/design-process-3.jpg'
 							alt='design process 3'
-							className='shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
+							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]'
 						/>
 						<div className='text-center'>
 							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Prototype & Test</h6>

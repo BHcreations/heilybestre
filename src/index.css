@@ -107,7 +107,7 @@
 	}
 
 	.title {
-		@apply text-[40px] leading-[40px] sm:text-[32px] sm:leading-[32px];
+		@apply sm:text-[40px] sm:leading-[40px] text-[32px] leading-[32px];
 	}
 	h1,
 	h1 span {
