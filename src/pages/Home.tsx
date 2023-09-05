@@ -11,8 +11,8 @@ const Home = () => {
 				<div className='hero flex-container flex-col text-center z-50 m-auto lg:w-[728px] sm:w-[600px] w-[390px]'>
 					<h1 className='mb-6 lg:text-5xl text-4xl'>
 						<span className='highlight bold lg:text-5xl text-4xl'>
-							Hello! I am Heily, a <span>UI/UX Designer</span> and <span>Former Web Developer</span> based
-							in Manila, Philippines.
+							Hello! I am Heily, a <span className='text-[#CE8A7D]'>UI/UX Designer</span> and{' '}
+							<span className='text-[#828A99]'>Former Web Developer</span> based in Manila, Philippines.
 						</span>
 					</h1>
 					<span className='tracking-[0.48px] mb-9'>Welcome to my portfolio.</span>
@@ -145,7 +145,7 @@ const Home = () => {
 								<h1 className='text-[##79719B] text-[64px] leading-[80px] tracking-widest'>
 									mealplannr
 								</h1>
-								<div className='flex w-full'>
+								<div className='flex -mt-20 sm:mt-0 w-full'>
 									<MealPlannerMobile1 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
 									<MealPlannerMobile2 className='lg:w-full sm:w-10/12 w-[50vw] hover:scale-105 transition-all' />
 								</div>
