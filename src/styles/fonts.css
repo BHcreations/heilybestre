@@ -8,25 +8,25 @@
 }
 @font-face {
 	font-family: 'Avenir';
-	src: url('/fonts/Avenir Light.otf');
+	src: url('/fonts/Avenir Light.ttf');
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Avenir';
-	src: url('/fonts/Avenir Book.otf');
+	src: url('/fonts/Avenir Book.ttf');
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Avenir';
-	src: url('/fonts/Avenir Regular.otf');
+	src: url('/fonts/Avenir Regular.ttf');
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Avenir';
-	src: url('/fonts/Avenir Heavy.otf');
+	src: url('/fonts/Avenir Heavy.ttf');
 	font-weight: 800;
 	font-style: normal;
 }
