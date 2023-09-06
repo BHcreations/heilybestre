@@ -1,11 +1,7 @@
-import { useLocation } from 'react-router-dom';
 import Carousel from '../components/Carousel';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
-import { useEffect } from 'react';
 
 const PetSavvy = () => {
-	const location = useLocation();
-	useEffect(() => console.log(location), []);
 	return (
 		<>
 			<ScrollToTopOnMount />
@@ -90,7 +86,7 @@ const PetSavvy = () => {
 				<div className=' flex flex-col grow mx-auto w-full'>
 					<div className='lg:h-[1000px] h-[550px] relative w-full bg-neutral-100'>
 						<Carousel
-							name={`${process.env.VITE_APP_PUBLIC_URL}${location.pathname}/groundwork`}
+							name={`${window.location.origin}${window.location.pathname}_groundwork`}
 							items={[
 								'/images/pet-savvy-groundwork-1.png',
 								'/images/pet-savvy-groundwork-2.png',
