@@ -19,14 +19,14 @@ const Carousel = ({ items, name = 'carousel__slide' }: { items: string[]; name?:
 					>
 						<div className='carousel__snapper'>
 							<a
-								href={`#${name}${getPrevIndex(index) + 1}`}
+								href={`${process.env.VITE_APP_PUBLIC_URL}#${name}${getPrevIndex(index) + 1}`}
 								className='carousel__prev'
 								onClick={() => setCurrent(getPrevIndex(index))}
 							>
 								Go to {index === 0 ? 'last' : 'previous'} slide
 							</a>
 							<a
-								href={`#${name}${getNextIndex(index) + 1}`}
+								href={`${process.env.VITE_APP_PUBLIC_URL}#${name}${getNextIndex(index) + 1}`}
 								className='carousel__next'
 								onClick={() => setCurrent(getNextIndex(index))}
 							>
@@ -42,7 +42,7 @@ const Carousel = ({ items, name = 'carousel__slide' }: { items: string[]; name?:
 					{items.map((_item, index) => (
 						<li key={index} className={`carousel__navigation-item ${index === current ? 'active' : ''}`}>
 							<a
-								href={`#${name}${index + 1}`}
+								href={`${process.env.VITE_APP_PUBLIC_URL}#${name}${index + 1}`}
 								className='carousel__navigation-button'
 								onClick={() => setCurrent(index)}
 							>
