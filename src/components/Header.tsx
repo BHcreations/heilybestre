@@ -22,7 +22,7 @@ const Header = () => {
 							ABOUT
 						</Link>
 						<Link
-							to='/files/resume.pdf'
+							to='/files/CV-MIHAELA_BESTRE.pdf'
 							className='font-avenir leading-6 text-base font-medium tracking-[0.4px]'
 							target='_blank'
 							download
@@ -67,7 +67,7 @@ const Header = () => {
 									</Menu.Item>
 									<Menu.Item>
 										<Link
-											to='/files/resume.pdf'
+											to='/files/CV-MIHAELA_BESTRE.pdf'
 											className='block px-4 py-2 font-medium tracking-[0.4px]'
 											target='_blank'
 											download
