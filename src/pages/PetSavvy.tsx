@@ -90,7 +90,7 @@ const PetSavvy = () => {
 				<div className=' flex flex-col grow mx-auto w-full'>
 					<div className='lg:h-[1000px] h-[550px] relative w-full bg-neutral-100'>
 						<Carousel
-							name={`${location.pathname}/groundwork`}
+							name={`${process.env.VITE_APP_PUBLIC_URL}${location.pathname}/groundwork`}
 							items={[
 								'/images/pet-savvy-groundwork-1.png',
 								'/images/pet-savvy-groundwork-2.png',
