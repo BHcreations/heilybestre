@@ -1,6 +1,14 @@
 import { useState } from 'react';
 
-const Carousel = ({ items, name = 'carousel__slide' }: { items: string[]; name?: string }) => {
+const Carousel = ({
+	items,
+	base = '',
+	name = 'carousel__slide',
+}: {
+	items: string[];
+	name?: string;
+	base?: string;
+}) => {
 	const [current, setCurrent] = useState(0);
 	const getNextIndex = (index: number) => {
 		return index === items.length - 1 ? 0 : index + 1;
@@ -19,14 +27,14 @@ const Carousel = ({ items, name = 'carousel__slide' }: { items: string[]; name?:
 					>
 						<div className='carousel__snapper'>
 							<a
-								href={`#${name}${getPrevIndex(index) + 1}`}
+								href={`${base}#${name}${getPrevIndex(index) + 1}`}
 								className='carousel__prev'
 								onClick={() => setCurrent(getPrevIndex(index))}
 							>
 								Go to {index === 0 ? 'last' : 'previous'} slide
 							</a>
 							<a
-								href={`#${name}${getNextIndex(index) + 1}`}
+								href={`${base}#${name}${getNextIndex(index) + 1}`}
 								className='carousel__next'
 								onClick={() => setCurrent(getNextIndex(index))}
 							>
@@ -42,7 +50,7 @@ const Carousel = ({ items, name = 'carousel__slide' }: { items: string[]; name?:
 					{items.map((_item, index) => (
 						<li key={index} className={`carousel__navigation-item ${index === current ? 'active' : ''}`}>
 							<a
-								href={`#${name}${index + 1}`}
+								href={`${base}#${name}${index + 1}`}
 								className='carousel__navigation-button'
 								onClick={() => setCurrent(index)}
 							>
