@@ -35,7 +35,7 @@ const Home = () => {
 							className='shadow-[-8px_8px] md:shadow-[-18px_18px] text-[#E0DBD4] mb-[52px]  hover:scale-105 transition-all'
 						/>
 						<div className='text-center'>
-							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Emphatize & Design</h6>
+							<h6 className='font-avenir text-[#575B63] text-base font-extrabold'>Empathize & Design</h6>
 							<ul className='font-avenir font-normal text-sm list-disc list-inside'>
 								<li>
 									<span>Company state and goals</span>
